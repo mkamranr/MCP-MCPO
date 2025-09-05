@@ -147,16 +147,5 @@ curl -X POST http://127.0.0.1:8000/tools/reverse_string -H "Content-Type: applic
 
 ---
 
-## **8. .gitignore**
-```txt
-.venv/
-__pycache__/
-*.pyc
-*.log
-uv.lock
-```
-
----
-
 ## **License**
 MIT License © 2025
