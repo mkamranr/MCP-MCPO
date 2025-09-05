@@ -113,9 +113,14 @@ mcp_server.tool()(reverse_string)
 
 ## **6. Running the Server**
 ```bash
-mcpo --host 0.0.0.0 --port 8000 -- python server.py
+mcpo --host 0.0.0.0 --port 8000 -- fastmcp run server.py:mcp_server
 ```
 
+If you want to run mcpo on https
+```bash
+mcpo --host 0.0.0.0 --port 8000 --ssl-keyfile /path/to/key.key --ssl-certfile /path/to/cert.crt -- fastmcp run server.py:mcp_server
+
+```
 ---
 
 ## **7. Testing Tools**
