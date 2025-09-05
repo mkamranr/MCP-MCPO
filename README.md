@@ -27,8 +27,8 @@ It allows your LLM to **auto-discover available tools** and decide when to call 
 
 ### **Step 1 — Clone the Repository**
 ```bash
-git clone https://github.com/mkamranr/MCP-MCPO.git
-cd MCP-MCPO
+git clone https://github.com/mkamranr/mcp-mcpo.git
+cd mcp-mcpo
 ```
 
 ### **Step 2 — Create Virtual Environment**
@@ -107,20 +107,13 @@ mcp_server = FastMCP("mcp-demo-server")
 mcp_server.tool()(hello_world)
 mcp_server.tool()(reverse_string)
 
-if __name__ == "__main__":
-    mcp_server.run()
 ```
 
 ---
 
 ## **6. Running the Server**
 ```bash
-fastmcp run server.py
-```
-
-Then, run MCPO:
-```bash
-mcpo run server.py
+mcpo --host 0.0.0.0 --port 8000 -- python server.py
 ```
 
 ---
